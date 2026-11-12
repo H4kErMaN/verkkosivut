@@ -1,0 +1,109 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 7rem 0 5rem;
+}
+
+/* Punainen hehku ja hienovarainen ruudukko tuovat mustalle taustalle
+   syvyyttä ilman raskasta taustakuvaa. */
+.hero__glow {
+  position: absolute;
+  top: -320px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 640px;
+  background: radial-gradient(
+    circle at center,
+    rgba(228, 18, 31, 0.22),
+    transparent 62%
+  );
+  pointer-events: none;
+}
+
+.hero__grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.045) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse at 50% 0%, #000 35%, transparent 78%);
+  -webkit-mask-image: radial-gradient(
+    ellipse at 50% 0%,
+    #000 35%,
+    transparent 78%
+  );
+  pointer-events: none;
+}
+
+.hero__inner {
+  position: relative;
+}
+
+.hero__eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.hero__title {
+  font-size: clamp(2.2rem, 5vw, 3.3rem);
+  max-width: 21ch;
+  font-weight: 800;
+}
+
+.hero__title-accent {
+  color: var(--accent);
+}
+
+.hero__lead {
+  margin-top: 1.5rem;
+  max-width: 60ch;
+  font-size: 1.12rem;
+  color: var(--text-muted);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2.5rem;
+}
+
+.hero__stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 4.5rem 0 0;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.hero__stat-value {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: #fff;
+}
+
+.hero__stat-label {
+  margin: 0.35rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 720px) {
+  .hero {
+    padding-top: 4.5rem;
+  }
+
+  .hero__stats {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

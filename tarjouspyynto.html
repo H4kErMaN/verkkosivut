@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exuplan</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(to right, #a30000, #d40000);
+      color: white;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .logo {
+      height: 50px;
+      vertical-align: middle;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #ffd9d9;
+    }
+    .section {
+      padding: 3rem 1rem;
+      border-bottom: 1px solid #ddd;
+      background-color: white;
+      border-radius: 8px;
+      margin: 2rem 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    h1, h2 {
+      color: #a30000;
+    }
+    footer {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    a {
+      color: #a30000;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+          <img src="ExuplanLogo.png" alt="Exuplan Logo" class="logo" />
+          <nav>
+            <ul>
+              <li><a href="index.html">Etusivu</a></li>
+              <li><a href="tarjouspyynto.html">Tarjouspyyntö</a></li>
+              <li class="dropdown">
+                <a href="#palvelut">Tuotteet</a>
+                <ul class="dropdown-menu">
+                  <li><a href="konenäkö.html">Konenäkö</a></li>
+                  <li><a href="mittaussovellukset.html">Mittaus</a></li>
+                  <li><a href="ohjelmistot.html">Ohjelmistot</a></li>
+                  <li><a href="konsultointi.html">Konsultointi</a></li>
+                  <li><a href="resurssit.html">Resurssit</a></li>
+                  <li><a href="vaatimustenhallinta.html">Vaatimustenhallinta</a></li>
+                </ul>
+              </li>
+              <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    
+  <section id="tarjouspyynto" class="section">
+    <div class="container">
+      <h2>Tarjouspyyntö</h2>
+      <form action="https://formspree.io/f/xblgvpjd" method="POST">
+        <label for="email">Sähköpostiosoite:</label><br />
+        <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;" /><br />
+  
+        <label for="phone">Puhelinnumero:</label><br />
+        <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 0.5rem; margin-bottom: 1rem;" /><br />
+  
+        <label for="message">Mitä asia koskee:</label><br />
+        <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 0.5rem;"></textarea><br /><br />
+  
+        <button type="submit" style="background-color: #a30000; color: white; border: none; padding: 0.75rem 1.5rem; cursor: pointer; font-size: 1rem;">Lähetä</button>
+      </form>
+    </div>
+  </section>
+  
+  
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Exuplan &mdash; Kaikki oikeudet pidätetään</p>
+    </div>
+  </footer>
+</body>
+</html>

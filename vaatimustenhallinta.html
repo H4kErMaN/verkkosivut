@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exuplan</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #222;
+    }
+    header {
+      background-color: #a30000;
+      color: white;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .logo {
+      height: 50px;
+      vertical-align: middle;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      padding: 3rem 1rem;
+      border-bottom: 1px solid #eee;
+    }
+    h1, h2 {
+      color: #a30000;
+    }
+    footer {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <img src="ExuplanLogo.png" alt="Exuplan Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Etusivu</a></li>
+          <li><a href="tarjouspyynto.html">Tarjouspyyntö</a></li>
+          <li class="dropdown">
+            <a href="#palvelut">Tuotteet</a>
+            <ul class="dropdown-menu">
+              <li><a href="konenäkö.html">Konenäkö</a></li>
+              <li><a href="mittaussovellukset.html">Mittaus</a></li>
+              <li><a href="ohjelmistot.html">Ohjelmistot</a></li>
+              <li><a href="konsultointi.html">Konsultointi</a></li>
+              <li><a href="resurssit.html">Resurssit</a></li>
+              <li><a href="vaatimustenhallinta.html">Vaatimustenhallinta</a></li>
+            </ul>
+          </li>
+          <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <section id="etusivu" class="section">
+    <div class="container">
+      <h1>Mittauksen ja automaation asiantuntija usean vuosikymmenen kokemuksella</h1>
+    </div>
+  </section>
+
+  <section id="palvelut" class="section">
+    <div class="container">
+      <h2>Vaatimustenhallinta</h2>
+      <p>Exuplanilta saat <strong>ExuRQM</strong>-järjestelmän, joka hoitaa laatudokumentaation koko sen elinkaaren ajan. Järjestelmän avulla voidaan hoitaa vaatimuspohjaisen suunnittelun dokumentaation tuottaminen sekä versioiden ja muutosten hallinta. Lisäksi järjestelmän avulla voidaan varmistaa kirjoitettavan laatudokumentaation laadukkuus</p>
+      <p></p>
+      <p>Järjestelmä hoitaa versionhallinnan kirjaamalla käyttäjän tekemät muutokset tietokantaan automaattisesti. Järjestelmä tuottaa myös monipuoliset raportit laatudokumentaatiosta.</p>
+    </div>
+  </section>
+
+  <!-- Seuraavat osiot jatkavat samalla tyylillä -->
+  <!-- Lyhennetty jatkoa varten, säilytä alkuperäiset osiot -->
+
+  <section id="yhteystiedot" class="section">
+    <div class="container">
+      <h2>Yhteystiedot</h2>
+      <p><strong>Ota yhteyttä sähköpostitse:</strong> <a href="mailto:esa.kuvaja@exuplan.fi">esa.kuvaja@exuplan.fi</a></p>
+      <p><strong>Osoite:</strong><br>
+      Exuplan<br>
+      Salapirkontie 5<br>
+      50800 Mikkeli<br>
+      <a href="http://www.exuplan.fi">www.exuplan.fi</a></p>
+  
+      <p><strong>Y-tunnus:</strong> 2761330-9<br>
+      <strong>VAT:</strong> FI27613309<br>
+      <strong>Kotipaikka:</strong> Mikkeli</p>
+  
+      <p><strong>Verkkolaskut:</strong><br>
+      OVT-tunnus: 003727613309<br>
+      Välittäjän tunnus: OKOYFIHH</p>
+  
+      <p><strong>Pankkiyhteys:</strong><br>
+      OP Lappeenranta<br>
+      IBAN: FI96 5620 0920 5805 69</p>
+  
+      <p><strong>Yrittäjä:</strong><br>
+      Esa Kuvaja<br>
+      <a href="mailto:esa.kuvaja@exuplan.fi">esa.kuvaja@exuplan.fi</a><br>
+      Puh: +358 40 8227743</p>
+  
+      <!-- Tässä kuva -->
+      <img src="omistaja.png" alt="Omistaja Esa Kuvaja" style="max-width: 200px; margin-top: 1rem; border-radius: 8px;" />
+    </div>
+  </section>
+  
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Exuplan</p>
+    </div>
+  </footer>
+</body>
+</html>
