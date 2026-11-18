@@ -9,6 +9,12 @@ const ServiceCard = ({ service }) => (
         <li key={point}>{point}</li>
       ))}
     </ul>
+    {service.href && (
+      <a className="service__link" href={service.href}>
+        Lue lisää
+        <span aria-hidden="true">→</span>
+      </a>
+    )}
   </article>
 )
 

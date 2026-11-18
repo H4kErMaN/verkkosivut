@@ -22,6 +22,7 @@ export const services = [
     description:
       'Räätälöidyt ohjelmistot mittaukseen, raportointiin ja tuotannon seurantaan.',
     points: ['Mittausohjelmistot', 'Raportointi', 'Integraatiot'],
+    href: 'ohjelmistot.html',
   },
   {
     id: 'logiikka',
@@ -69,3 +70,68 @@ export const company = {
   phone: '+358 40 822 7743',
   phoneHref: '+358408227743',
 }
+
+// ---------- Ohjelmistot-alasivu ----------
+
+export const softwareIntro =
+  'Exuplan tekee eri tekniikan alueilla tarvittavia mittaus- ja ' +
+  'automaatio-ohjelmistoja. Toteutus valitaan aina kohteen mukaan: ' +
+  'työasemasovellus, mittausjärjestelmän ohjelmisto tai koneen ' +
+  'logiikkaohjelma — tarvittaessa kaikki samaan kokonaisuuteen.'
+
+export const softwareTools = [
+  {
+    id: 'qt-creator',
+    name: 'Qt Creator',
+    tag: 'Sovelluskehitys',
+    description:
+      'Käyttöliittymien ja mittausjärjestelmien C++-kehitystyökalu.',
+  },
+  {
+    id: 'visual-studio',
+    name: 'Visual Studio',
+    tag: 'Sovelluskehitys',
+    description: 'Vastaava Microsoftin työkalu.',
+  },
+  {
+    id: 'beckhoff',
+    name: 'Beckhoff',
+    tag: 'Logiikat',
+    description: 'Logiikkaohjelmistot.',
+  },
+  {
+    id: 'siemens',
+    name: 'Siemens',
+    tag: 'Logiikat',
+    description: 'Logiikkaohjelmistot.',
+  },
+  {
+    id: 'beremiz',
+    name: 'Beremiz',
+    tag: 'Avoin lähdekoodi',
+    description: 'softPLC, avoimen koodin ohjelmisto.',
+  },
+]
+
+export const softwareScope = [
+  {
+    id: 'mittausohjelmistot',
+    title: 'Mittausohjelmistot',
+    text: 'Mittausdatan keruu, käsittely ja esitys käyttäjälle selkeässä muodossa.',
+  },
+  {
+    id: 'raportointi',
+    title: 'Raportointi',
+    text: 'Tuotannon ja laadun raportit siinä muodossa, jossa niitä oikeasti käytetään.',
+  },
+  {
+    id: 'integraatiot',
+    title: 'Integraatiot',
+    text: 'Tiedonsiirto olemassa oleviin järjestelmiin ja tietokantoihin.',
+  },
+  {
+    id: 'logiikkaohjelmat',
+    title: 'Logiikkaohjelmat',
+    text: 'Koneiden ja laitteiden ohjaukset sekä käyttöönotto tuotantoympäristössä.',
+  },
+]
