@@ -7,13 +7,13 @@ import {
   softwareScope,
   softwareTools,
 } from '../data/content'
-import './OhjelmistotPage.css'
+import './Subpage.css'
 
 const ToolCard = ({ tool }) => (
-  <article className="tool">
-    <span className="tool__tag">{tool.tag}</span>
-    <h3 className="tool__name">{tool.name}</h3>
-    <p className="tool__description">{tool.description}</p>
+  <article className="card">
+    <span className="card__tag">{tool.tag}</span>
+    <h3 className="card__name">{tool.name}</h3>
+    <p className="card__description">{tool.description}</p>
   </article>
 )
 
@@ -48,7 +48,7 @@ const OhjelmistotPage = () => (
             sekä työasemasovelluksen että koneen logiikkaohjelman.
           </p>
 
-          <div className="tools">
+          <div className="cards">
             {softwareTools.map((tool) => (
               <ToolCard key={tool.id} tool={tool} />
             ))}

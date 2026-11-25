@@ -15,6 +15,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         etusivu: resolve(import.meta.dirname, 'index.html'),
+        konenako: resolve(import.meta.dirname, 'konenako.html'),
         ohjelmistot: resolve(import.meta.dirname, 'ohjelmistot.html'),
       },
     },

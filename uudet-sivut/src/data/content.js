@@ -8,6 +8,7 @@ export const services = [
     description:
       'Kameroihin ja kuva-analyysiin perustuvat tarkastus- ja mittausjärjestelmät tuotantolinjoille.',
     points: ['Laaduntarkastus', 'Kappaleen tunnistus', 'Mittaava konenäkö'],
+    href: 'konenako.html',
   },
   {
     id: 'mittaus',
@@ -134,4 +135,73 @@ export const softwareScope = [
     title: 'Logiikkaohjelmat',
     text: 'Koneiden ja laitteiden ohjaukset sekä käyttöönotto tuotantoympäristössä.',
   },
+]
+
+// ---------- Konenäkö-alasivu ----------
+
+export const visionIntro =
+  'Konenäköä tarvitaan teollisuudessa yhä enemmän, ja Exuplan on valmis ' +
+  'vastaamaan konenäköön liittyviin haasteisiin. Kamerat, tietokonelaitteet ' +
+  'ja sovellukset valitaan asiakkaan tarpeiden mukaan nykyaikaisista ' +
+  'vaihtoehdoista.'
+
+export const visionCases = [
+  {
+    id: 'laaduntarkastus',
+    name: 'Laaduntarkastus',
+    tag: 'Laatu',
+    description:
+      'Automaattinen laadutus on mahdollista toteuttaa joustavasti nykyaikaisen konenäköteknologian avulla.',
+  },
+  {
+    id: 'tunnistus',
+    name: 'Kappaleen tunnistus',
+    tag: 'Tuotanto',
+    description:
+      'Kappaleiden tunnistus ja lajittelu tuotantolinjalla kuva-analyysin perusteella.',
+  },
+  {
+    id: 'mittaava',
+    name: 'Mittaava konenäkö',
+    tag: 'Mittaus',
+    description:
+      'Mitat ja muodot kuvasta silloin, kun koskettava mittaus ei ole mahdollista.',
+  },
+  {
+    id: 'seuranta',
+    name: 'Tuotannon seuranta',
+    tag: 'Seuranta',
+    description:
+      'Kuvadata talteen ja raportoitavaksi yhdessä muun mittaustiedon kanssa.',
+  },
+]
+
+export const visionScope = [
+  {
+    id: 'kartoitus',
+    title: 'Kartoitus',
+    text: 'Käydään läpi mitä tarkastetaan tai mitataan ja millä tarkkuudella.',
+  },
+  {
+    id: 'laitevalinnat',
+    title: 'Kamerat ja valaistus',
+    text: 'Kamerat ja tietokonelaitteet valitaan kohteen mukaan nykyaikaisista vaihtoehdoista.',
+  },
+  {
+    id: 'sovellus',
+    title: 'Sovellus',
+    text: 'Kuva-analyysi ja käyttöliittymä toteutetaan kohteen vaatimusten mukaan.',
+  },
+  {
+    id: 'integrointi',
+    title: 'Integrointi',
+    text: 'Järjestelmä liitetään tuotantolinjaan ja otetaan käyttöön tuotannossa.',
+  },
+]
+
+// Alasivut valikkoa varten. Uusi alasivu lisätään tähän ja
+// vite.config.js:n input-listaan.
+export const subpages = [
+  { id: 'konenako', label: 'Konenäkö', href: 'konenako.html' },
+  { id: 'ohjelmistot', label: 'Ohjelmistot', href: 'ohjelmistot.html' },
 ]

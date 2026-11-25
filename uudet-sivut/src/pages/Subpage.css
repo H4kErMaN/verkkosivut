@@ -1,12 +1,15 @@
-/* ---------- Kehitystyökalut ---------- */
-.tools {
+/* Alasivujen yhteiset tyylit: korttiruudukko, numeroitu lista
+   ja lopun toimintakehote. */
+
+/* ---------- Korttiruudukko ---------- */
+.cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.25rem;
   margin-top: 3rem;
 }
 
-.tool {
+.card {
   background-color: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -15,13 +18,13 @@
     background-color 0.2s ease;
 }
 
-.tool:hover {
+.card:hover {
   border-color: rgba(228, 18, 31, 0.5);
   background-color: #1b1b21;
   transform: translateY(-3px);
 }
 
-.tool__tag {
+.card__tag {
   display: inline-block;
   font-size: 0.72rem;
   font-weight: 700;
@@ -34,19 +37,19 @@
   padding: 0.25rem 0.7rem;
 }
 
-.tool__name {
+.card__name {
   font-size: 1.25rem;
   font-weight: 700;
   margin-top: 1rem;
 }
 
-.tool__description {
+.card__description {
   margin-top: 0.55rem;
   color: var(--text-muted);
   font-size: 0.97rem;
 }
 
-/* ---------- Toteutus ---------- */
+/* ---------- Numeroitu lista ---------- */
 .scope {
   list-style: none;
   margin: 3rem 0 0;

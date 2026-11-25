@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Logo from './Logo'
+import { subpages } from '../data/content'
 import './Header.css'
 
 // home = polku etusivulle. Etusivulla '' (ankkurit toimivat suoraan),
@@ -7,7 +8,7 @@ import './Header.css'
 // current = sivun tunnus, jolla valikon kohta merkitään aktiiviseksi.
 const navLinks = (home) => [
   { id: 'palvelut', href: `${home}#palvelut`, label: 'Palvelut' },
-  { id: 'ohjelmistot', href: 'ohjelmistot.html', label: 'Ohjelmistot' },
+  ...subpages,
   { id: 'osaaminen', href: `${home}#osaaminen`, label: 'Osaaminen' },
   { id: 'yhteystiedot', href: `${home}#yhteystiedot`, label: 'Yhteystiedot' },
 ]
