@@ -2,6 +2,7 @@ import './Hero.css'
 
 const Hero = ({ stats }) => (
   <section className="hero" id="top">
+    <div className="hero__photo" aria-hidden="true" />
     <div className="hero__glow" aria-hidden="true" />
     <div className="hero__grid" aria-hidden="true" />
 

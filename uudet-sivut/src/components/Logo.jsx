@@ -1,15 +1,17 @@
+import logoKuva from '../assets/exuplan-logo-valkoinen.png'
 import './Logo.css'
 
-// Alkuperäinen PNG-logo on mustalla tekstillä eikä erotu tummalta
-// taustalta, joten tunnus ladotaan tekstinä. Punainen korostus on
-// X-kirjaimessa, jonka läpi logon kaari alkuperäisessä kulkee.
+// Alkuperäinen logo on mustalla tekstillä, joten siitä on tehty
+// vaalea versio tummaa taustaa varten (src/assets). Punainen kaari ja
+// Measuring Automation -alateksti ovat alkuperäisen mukaiset.
 const Logo = ({ company }) => (
-  <span className="logo" aria-label={`${company.name} ${company.tagline}`}>
-    <span className="logo__name">
-      E<span className="logo__x">X</span>UPLAN
-    </span>
-    <span className="logo__tagline">{company.tagline}</span>
-  </span>
+  <img
+    className="logo"
+    src={logoKuva}
+    alt={`${company.name} — ${company.tagline}`}
+    width="633"
+    height="187"
+  />
 )
 
 export default Logo
