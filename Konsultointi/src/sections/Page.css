@@ -1,0 +1,104 @@
+.page-section {
+    display: grid;
+    grid-template-columns: minmax(190px, 0.8fr) minmax(0, 1.6fr);
+    gap: 32px;
+    padding: 34px 0;
+    border-top: 1px solid #383838;
+}
+
+.page-section h2 {
+    margin: 0;
+    font-size: 1.35rem;
+    line-height: 1.35;
+}
+
+.section-content {
+    max-width: 700px;
+}
+
+.section-content p {
+    margin: 0;
+    color: #d2d2d2;
+}
+
+.section-content .väli + .väli {
+    margin-top: 2rem;
+}
+
+.section-content p + .coverage-list {
+    margin-top: 14px;
+}
+
+.coverage-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 28px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.coverage-list li {
+    padding: 9px 0;
+    border-bottom: 1px solid #383838;
+}
+
+.coverage-list li::before {
+    content: "—";
+    margin-right: 10px;
+    color: #8bc7a5;
+}
+
+.abbreviation-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.abbreviation-label {
+    color: #eee;
+    font-weight: 600;
+}
+
+.abbreviation-meaning {
+    color: #999;
+    font-size: 0.875rem;
+}
+
+.esittely {
+    margin-top: 32px;
+    padding: 28px;
+    border: 1px solid #383838;
+    border-radius: 8px;
+}
+
+.esittely h2 {
+    margin: 0 0 8px;
+}
+
+.esittely p {
+    margin: 0 0 18px;
+    color: #d2d2d2;
+}
+
+.esittely a {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 4px;
+    color: #131313;
+    background: #8bc7a5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .page-section {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 26px 0;
+    }
+
+    .coverage-list {
+        grid-template-columns: 1fr;
+    }
+}

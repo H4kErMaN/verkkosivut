@@ -1,0 +1,26 @@
+.hero {
+    margin: 8px 0 24px;
+    padding: 22px 0 28px 24px;
+    border-left: 3px solid #8bc7a5;
+}
+
+.hero h1 {
+    margin: 0 0 8px;
+    color: #eee;
+    font-size: clamp(3rem, 8vw, 5rem);
+    letter-spacing: -0.06em;
+    line-height: 1.1;
+}
+
+.hero-lead {
+    max-width: 720px;
+    margin: 0;
+    color: #d2d2d2;
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding-left: 18px;
+    }
+}
