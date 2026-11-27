@@ -16,6 +16,7 @@ export const services = [
     description:
       'Teollisuuden mittausratkaisut anturivalinnasta valmiiseen, kalibroituun järjestelmään.',
     points: ['Anturointi', 'Mittausdatan keruu', 'Kalibrointi'],
+    href: 'mittarit.html',
   },
   {
     id: 'ohjelmistot',
@@ -203,5 +204,70 @@ export const visionScope = [
 // vite.config.js:n input-listaan.
 export const subpages = [
   { id: 'konenako', label: 'Konenäkö', href: 'konenako.html' },
+  { id: 'mittarit', label: 'Mittarit', href: 'mittarit.html' },
   { id: 'ohjelmistot', label: 'Ohjelmistot', href: 'ohjelmistot.html' },
+]
+
+// ---------- Mittarit-alasivu ----------
+// Tekstit ovat dokumentista Mittaureista.docx.
+
+export const gaugesIntro =
+  'Exuplan suunnittelee ja valmistaa mittalaitteita sahoille, ' +
+  'dimensiolajittelulaitoksille ja kuivan sahatavaran käsittelyyn. ' +
+  'Lisäksi toteutamme sahalinjojen suunnittelun, sähköistyksen ja ' +
+  'automaation. Myös kaikenlaiset tuotannon optimoinnit kuuluvat ' +
+  'toimituksiimme.'
+
+export const logGauges = [
+  {
+    id: 'exuscan',
+    name: 'ExuScan',
+    tag: 'Oma tuote',
+    description:
+      'Oma, edullinen tukkimittarimme. Se perustuu GigE-kameroihin ja on tarkoitettu linjoille, joiden nopeus on alle 90 m/min.',
+  },
+  {
+    id: 'joescan',
+    name: 'JoeScan-3D',
+    tag: 'Nopeat linjat',
+    description:
+      'Nopeammille linjoille toimitamme tukkimittarin JoeScan-3D-antureilla. Anturit käyttävät kahteen kameraan perustuvaa kuvaustekniikkaa tarkempaan pinnan muodon mittaukseen, enimmillään 500 profiilia sekunnissa.',
+  },
+]
+
+export const logGaugesNote =
+  'Kummastakin mittarista on saatavana myös pelkan ja parrun mittaukseen ' +
+  'sopiva malli.'
+
+export const lumberGauges = [
+  {
+    id: 'vahvuus',
+    name: 'Vahvuus- ja leveysmittari',
+    tag: 'Tarkkuus 0,1 mm',
+    description: 'Dimensiolajittelulaitosten vahvuuden ja leveyden mittaus.',
+  },
+  {
+    id: 'pituus',
+    name: 'Pituusmittari',
+    tag: 'Tarkkuus 1 mm',
+    description: 'Sahatavaran pituuden mittaus lajittelun yhteydessä.',
+  },
+]
+
+export const lumberGaugesNote =
+  'Samoja mittareita voi käyttää myös kuivan sahatavaran laitoksilla ' +
+  'laadun seurantaan.'
+
+export const sawVisionApps = [
+  'Kappaleen kääntö ennen höylää',
+  'Sydämen paikan tunnistus tukin tai parrun päästä asetteen muodostusta varten',
+  'Yksinkertaiset kuvankäsittelyyn perustuvat sahatavaran laadutusjärjestelmät',
+]
+
+export const sawlineSteps = [
+  { id: 'layout', title: '3D-layoutsuunnittelu' },
+  { id: 'suunnittelu', title: 'Sähkö- ja automaatiosuunnittelu' },
+  { id: 'asennukset', title: 'Sähkö- ja automaatioasennukset' },
+  { id: 'ohjelmointi', title: 'PLC- ja mittausjärjestelmien ohjelmoinnit' },
+  { id: 'optimointi', title: 'Optimointi- ja raportointijärjestelmät' },
 ]

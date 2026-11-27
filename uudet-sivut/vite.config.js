@@ -10,6 +10,7 @@ export default defineConfig({
       input: {
         etusivu: resolve(import.meta.dirname, 'index.html'),
         konenako: resolve(import.meta.dirname, 'konenako.html'),
+        mittarit: resolve(import.meta.dirname, 'mittarit.html'),
         ohjelmistot: resolve(import.meta.dirname, 'ohjelmistot.html'),
       },
     },

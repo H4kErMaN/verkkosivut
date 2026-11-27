@@ -2,8 +2,17 @@ import './PageHero.css'
 
 // Alasivujen yhteinen yläosa. Etusivun Hero on isompi; tämä on sama
 // tyyli matalampana, jotta alasivuilla päästään nopeammin asiaan.
-const PageHero = ({ label, title, lead, children }) => (
+// photo = taustakuva. Kuvan osoite välitetään CSS-muuttujana --photo,
+// jolloin himmennysliukuvärit pysyvät tyylitiedostossa.
+const PageHero = ({ label, title, lead, photo, children }) => (
   <section className="page-hero" id="top">
+    {photo && (
+      <div
+        className="page-hero__photo"
+        style={{ '--photo': `url(${photo})` }}
+        aria-hidden="true"
+      />
+    )}
     <div className="page-hero__glow" aria-hidden="true" />
 
     <div className="container page-hero__inner">

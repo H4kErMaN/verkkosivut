@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import PageHero from '../components/PageHero'
 import Footer from '../components/Footer'
+import heroKuva from '../assets/hero-ohjelmistot.jpg'
 import {
   company,
   softwareIntro,
@@ -26,7 +27,12 @@ const OhjelmistotPage = () => (
     <Header company={company} home="index.html" current="ohjelmistot" />
 
     <main id="sisalto">
-      <PageHero label="Palvelut" title="Ohjelmistot" lead={softwareIntro}>
+      <PageHero
+        label="Palvelut"
+        title="Ohjelmistot"
+        lead={softwareIntro}
+        photo={heroKuva}
+      >
         <div className="page-hero__actions">
           <a href="index.html#tarjouspyynto" className="button button--primary">
             Pyydä tarjous

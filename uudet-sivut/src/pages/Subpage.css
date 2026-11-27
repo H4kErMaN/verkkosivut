@@ -101,3 +101,72 @@
 .cta .section__title {
   max-width: 26ch;
 }
+
+/* ---------- Tekninen kuva ---------- */
+/* CAD-kuvassa on valkoinen tausta, joten se esitetään vaalealla
+   levyllä. Tummalle taustalle sellaisenaan asetettuna kuvan ohuet
+   mustat viivat katoaisivat. */
+.figure {
+  margin: 3rem 0 0;
+}
+
+.figure__media {
+  display: flex;
+  justify-content: center;
+  background-color: #f1f1f4;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.figure__media img {
+  max-height: 540px;
+  width: auto;
+}
+
+.figure__caption {
+  margin-top: 0.9rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* ---------- Luettelo ---------- */
+.speclist {
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.speclist li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9rem;
+  padding: 1rem 1.3rem;
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text-muted);
+}
+
+.speclist li::before {
+  content: '';
+  flex: none;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accent);
+}
+
+.note {
+  margin-top: 1.5rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 720px) {
+  .figure__media {
+    padding: 0.9rem;
+  }
+}
